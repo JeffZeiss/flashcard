@@ -6,11 +6,6 @@
       "id": 5
     },
     {
-      "name": "adsfadsedadsfaefaef",
-      "description": "adsfasdfaefaefa",
-      "id": 6
-    },
-    {
       "name": "New deck",
       "description": "New Deck",
       "id": 7
@@ -23,26 +18,8 @@
       "id": 2
     },
     {
-      "front": "adsfad",
-      "back": "asdfasdf",
-      "deckId": 6,
-      "id": 21
-    },
-    {
-      "front": "asdf",
-      "back": "asdf",
-      "deckId": 6,
-      "id": 22
-    },
-    {
-      "front": "asdfasdf",
-      "back": "asdfae",
-      "deckId": 6,
-      "id": 23
-    },
-    {
-      "front": "adsfadsf",
-      "back": "asdfasdf",
+      "front": "Front ",
+      "back": "Back",
       "deckId": 7,
       "id": 24
     },

@@ -41,6 +41,7 @@ function StudyByCard(props) {
         if (window.confirm("Restart cards? Click 'cancel to return to the home page.")) {
             setCardOfDeck(0);
             setFlipped(false)
+            setFOrB(true)
         }
         else {
             history.push("/")
