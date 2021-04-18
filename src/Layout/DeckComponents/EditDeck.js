@@ -13,9 +13,9 @@ function EditDeck(props) {
     ] = useState("edit")
     // const abortController=new AbortController()
     useEffect(() => {
-        readDeck(deckId, AbortController.signal).then(setDeck)
+        readDeck(deckId).then(setDeck)
         // setMainState({...mainState,editState:true, deepBreadCrumb:true, page:"Edit Deck"})
-    }, [apiRefresh])
+    }, [deckId,apiRefresh])
     console.log(deck, "deck")
     // history.location.pathname
     // ${deck.name}

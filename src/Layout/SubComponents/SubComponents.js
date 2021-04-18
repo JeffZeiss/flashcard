@@ -14,7 +14,7 @@ function NavBreadCrumb({ page, deckLink, deck, deep }) {//can likely leave this 
         <h5><Link to="/">Home/</Link>{deep && <Link to={deckLink} onClick={undeep}>{deck ? `${deck.name}/` : null}</Link>}{page}</h5>
     )
 }
-const abortController = new AbortController()
+// const abortController = new AbortController()
 function Buttons() {
     return null
 }
@@ -58,7 +58,7 @@ function DeckFormFields(props
         if (newOrEdit === "edit" && !deckFormContent.name && deck.name) {
             setDeckFormContent({ name: deck.name, description: deck.description })
         }
-    })
+    },[newOrEdit,deckFormContent.name,deck.name,deck.description])
 
 
     console.log(deckFormContent, "deckFormContent")//=>Prints name:undefined, description:undefined
@@ -77,7 +77,7 @@ function DeckFormFields(props
     }
 
     const createFetch = () => {
-        createDeck({ ...deckFormContent }, abortController.signal)
+        createDeck({ ...deckFormContent })
             .then((result) => {
                 // console.log(result);
                 // console.log(result,"api create result")
@@ -89,7 +89,7 @@ function DeckFormFields(props
         // .catch((error)=>{console.log(error)})
     }
     const updateFetch = () => {
-        updateDeck({ ...deckFormContent, id: deck.id }, abortController.signal)
+        updateDeck({ ...deckFormContent, id: deck.id })
             .then((result) => {
                 // console.log(result,"result from update fetch")
                 // console.log(typeof allDecks,allDecks,"allDecks type and actual content")

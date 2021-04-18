@@ -12,17 +12,17 @@ function DecksListed(props) {
     // //     // deleteProp
     // }=props
     const { apiRefresh, setApiRefresh } = props
-    const abortController = new AbortController()
+    // const abortController = new AbortController()
     // const history=useHistory()
     // getAllDecks(){
     // const findCurrentDecks = await listDecks(AbortSignal)
     useEffect(() => {
 
 
-        listDecks(abortController.signal).then(setAllDecks)
+        listDecks().then(setAllDecks)
         // .catch(setError);
 
-        return () => abortController.abort();
+        // return () => abortController.abort();
     }, [apiRefresh]);
 
     // if (error){
@@ -38,7 +38,7 @@ function DecksListed(props) {
         event.preventDefault();//probably not necessary if not a submit button
         let ID = event.target.getAttribute("data-arg1")
         if (window.confirm("Delete this deck? You will not be able to recover it.")) {
-            deleteDeck(ID, abortController.signal)
+            deleteDeck(ID)
                 .then((x) => { setApiRefresh(apiRefresh + 1) })
         }
         // .then((x)=>{setApiRefresh(false)})

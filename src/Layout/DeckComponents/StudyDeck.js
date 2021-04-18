@@ -16,11 +16,11 @@ function StudyDeck(props) {
 
     // , deck,url
     const { setApiRefresh, apiRefresh } = props
-    const abortController = new AbortController()
+    // const abortController = new AbortController()
     const deckLength = deck.cards.length
     useEffect(() => {
 
-        readDeck(deckId, AbortController.signal).then(setDeck)
+        readDeck(deckId).then(setDeck)
 
 
         //    setMainState({...mainState,editState:true,page:"Study"})
@@ -30,7 +30,7 @@ function StudyDeck(props) {
         if (deck.cards.length > 0) {
             console.log("deck cards have loaded")
             console.log("card of deck id", deck.cards[cardOfDeck])
-            readCard(deck.cards[cardOfDeck].id, abortController.signal).then((id) => { console.log(id); setCard(id) })
+            readCard(deck.cards[cardOfDeck].id).then((id) => { console.log(id); setCard(id) })
         }
     }
         , [deck, cardOfDeck])

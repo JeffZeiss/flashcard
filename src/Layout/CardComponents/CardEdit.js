@@ -6,7 +6,7 @@ import { readDeck, readCard } from "../../utils/api/index"
 
 function CardEdit(props) {
     const { cardId, deckId } = useParams()
-    const abortController = new AbortController()
+    // const abortController = new AbortController()
     const { apiRefresh, setApiRefresh
         // url,
         // mainState
@@ -18,12 +18,12 @@ function CardEdit(props) {
     const [deck, setDeck] = useState({})
     // const { deckId } = useParams()//Do your fetching with this
     useEffect(() => {
-        readDeck(deckId, abortController.signal).then((deck) => {
+        readDeck(deckId).then((deck) => {
             setDeck(deck)
-            readCard(cardId, abortController.signal).then(setThisCard)
+            readCard(cardId).then(setThisCard)
         })
 
-    }, [apiRefresh])
+    }, [apiRefresh,cardId,deck,deckId])
 
     //get the actual card with a fetch via cardId and place it into thisCard?
 

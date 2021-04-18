@@ -14,10 +14,10 @@ function AddCards(props) {
     const { apiRefresh, setApiRefresh } = props
     useEffect(() => {
 
-        readDeck(deckId, AbortController.signal).then(setDeck)
+        readDeck(deckId).then(setDeck)
 
         //    setMainState({...mainState,editState:true,page:"Study"})
-    }, [])
+    }, [deckId])
 
     return (
         <div>

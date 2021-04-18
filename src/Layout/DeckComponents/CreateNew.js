@@ -27,10 +27,10 @@ function CreateNew(props) {
         <div>
             {/* <NavBreadCrumb page={mainState.page}  mainState={mainState} 
             setMainState={setMainState} deck={createTempDeck}/>             */}
-            <h5><Link to="/">Home/</Link>Create New</h5>
+            <h5><Link to="/">Home/</Link>Create Deck</h5>
             <h3>
                 {/* {mainState.page} */}
-                Create New
+                Create Deck
             </h3>
             <DeckForm
                 // editState={mainState.editState} setAllDecks={setAllDecks} allDecks={allDecks} setError={setError} mainState={mainState}

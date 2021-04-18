@@ -1,16 +1,6 @@
 {
   "decks": [
     {
-      "name": "Test 2 ABC asdf",
-      "description": "Test 2 Desc ABC asdf",
-      "id": 2
-    },
-    {
-      "name": "FINAL CREATE TEST",
-      "description": "PROVEN",
-      "id": 4
-    },
-    {
       "name": "Is this working",
       "description": "Yes it is",
       "id": 5
@@ -19,6 +9,11 @@
       "name": "adsfadsedadsfaefaef",
       "description": "adsfasdfaefaefa",
       "id": 6
+    },
+    {
+      "name": "New deck",
+      "description": "New Deck",
+      "id": 7
     }
   ],
   "cards": [
@@ -26,48 +21,6 @@
       "front": "Why can't disappear add",
       "back": "WHY WHY WHY? test",
       "id": 2
-    },
-    {
-      "front": "Booya",
-      "back": "Double boooya",
-      "deckId": 4,
-      "id": 12
-    },
-    {
-      "front": "Front",
-      "back": "Back",
-      "deckId": 2,
-      "id": 14
-    },
-    {
-      "front": "adsfasdf",
-      "back": "asdfasdf",
-      "deckId": 4,
-      "id": 15
-    },
-    {
-      "front": "adsfasdf",
-      "back": "asdfasdf",
-      "deckId": 4,
-      "id": 16
-    },
-    {
-      "front": "asdfadsf",
-      "back": "asdfasdf",
-      "deckId": 4,
-      "id": 17
-    },
-    {
-      "front": "Working",
-      "back": "Good",
-      "deckId": 2,
-      "id": 18
-    },
-    {
-      "front": "adsfasd",
-      "back": "asdfasdf",
-      "deckId": 2,
-      "id": 19
     },
     {
       "front": "adsfad",
@@ -86,6 +39,30 @@
       "back": "asdfae",
       "deckId": 6,
       "id": 23
+    },
+    {
+      "front": "adsfadsf",
+      "back": "asdfasdf",
+      "deckId": 7,
+      "id": 24
+    },
+    {
+      "front": "adsf",
+      "back": "asdfasd",
+      "deckId": 7,
+      "id": 25
+    },
+    {
+      "front": "adsfads",
+      "back": "asdfads",
+      "deckId": 7,
+      "id": 26
+    },
+    {
+      "front": "awefa",
+      "back": "awefawe",
+      "deckId": 5,
+      "id": 27
     }
   ]
 }

@@ -22,7 +22,7 @@ function CardForm(props) {
         thisCard
         // ,setThisCard,url
     } = props
-    const abortController = new AbortController()
+    // const abortController = new AbortController()
     console.log(thisCard, "this card")
     //  const editState = mainState.cardEdit
     // console.log(allDecks)
@@ -40,7 +40,7 @@ function CardForm(props) {
         {
             setCardContent({ ...thisCard })
         }
-    })
+    },[newOrEditCard,cardContent.front,thisCard,editBegun])
     //  {front:frontIf,back:backIf}
     // const[deckFormContent,setDeckFormContent]=useState({name:nameIf,description:descIf})
 
@@ -54,7 +54,7 @@ function CardForm(props) {
     }
 
     const createFetch = () => {
-        createCard(deck.id, cardContent, abortController.signal)
+        createCard(deck.id, cardContent)
             .then((result) => {
                 // console.log(result);
                 // console.log(result,"api create result")
@@ -66,7 +66,7 @@ function CardForm(props) {
         // .catch((error)=>{console.log(error)})
     }
     const updateFetch = () => {
-        updateCard(cardContent, abortController.signal)
+        updateCard(cardContent)
             .then((result) => {
                 // console.log(result,"result from update fetch")
                 // console.log(typeof allDecks,allDecks,"allDecks type and actual content")

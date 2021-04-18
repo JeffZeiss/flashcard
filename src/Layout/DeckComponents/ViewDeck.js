@@ -18,15 +18,15 @@ function ViewDeck(props) {
 
     // const {url} = useRouteMatch()
     const history = useHistory()
-    const abortController = new AbortController()
+    // const abortController = new AbortController()
 
     const { deckId } = useParams()//Do your fetching with this
     useEffect(() => {
-        readDeck(deckId, abortController.signal).then((deck) => {
+        readDeck(deckId).then((deck) => {
             setDeck(deck)
         })
 
-    }, [apiRefresh])
+    }, [apiRefresh,deckId])
 
 
     // const cardTotal = deck.cards.length;
@@ -52,7 +52,7 @@ function ViewDeck(props) {
     }
     const deleteClick = (ID) => {
         if (window.confirm("Delete this deck? You will not be able to recover it."))
-            deleteDeck(ID, abortController.signal)
+            deleteDeck(ID)
                 .then((x) => {
                     // const decksLessDelete = allDecks.filter((deck) => deck.id !== parseInt(ID))
                     // console.log(decksLessDelete, "deckslessdelete")
@@ -72,7 +72,7 @@ function ViewDeck(props) {
     const deleteCardClick = (event) => {
         const cardId = event.target.getAttribute("data-arg1")
         if (window.confirm("Delete this card? You will not be able to recover it."))
-            deleteCard(cardId, abortController.signal)
+            deleteCard(cardId)
                 .then((x) => {
                     // const deckCardDeleted = deck.cards.filter((card)=>card.id!==cardId)
                     setApiRefresh(apiRefresh + 1)

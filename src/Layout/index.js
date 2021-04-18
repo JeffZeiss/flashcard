@@ -5,23 +5,12 @@ import NotFound from "./NotFound";
 import CreateNew from "../Layout/DeckComponents/CreateNew"
 import DecksListed from "../Layout/DeckComponents/DecksListed"
 import ViewDeck from "../Layout/DeckComponents/ViewDeck"
-// import React, { useState, Fragment, useEffect } from "react"
-// import { Switch, Route, Link, useParams, useRouteMatch, useHistory} from "react-router-dom"
-// import { Buttons, NavBreadCrumb } from "../SubComponents/SubComponents"
-// import { readDeck, deleteDeck, deleteCard } from "../../utils/api/index"
-// import { DeckForm } from "../SubComponents/Forms"
-// import {useParams} from "react-router-dom"
+
 import EditDeck from "../Layout/DeckComponents/EditDeck"
 import StudyDeck from "../Layout/DeckComponents/StudyDeck"
 import CardEdit from "../Layout/CardComponents/CardEdit"
 import AddCards from "../Layout/CardComponents/AddCards"
 
-// import {listDecks} from "../utils/api"
-// import {Link} from "react-router-dom"
-
-// import from "./CardComponents"
-
-//import the full list of decks
 
 function Layout() {
   // console.log(listDecks)
