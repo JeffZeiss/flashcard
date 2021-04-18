@@ -80,9 +80,11 @@ function StudyByCard(props) {
             card.front
         }</p>
         <button type="button" onClick={flipHandler}>Flip</button>
-        {cardOfDeck + 1 !== deckLength ? (
+        {
+        // cardOfDeck + 1 !== deckLength ? (
             flipped === true ? <button type="button" onClick={nextHandler}>Next</button> : null
-        ) : null}
+        // ) : null
+        }
 
     </div>
     )
