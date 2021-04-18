@@ -24,7 +24,7 @@ function EditDeck(props) {
         <div>
             {/* <NavBreadCrumb deckLink={url} deck={deck} setMainState={setMainState} page={mainState.page} mainState={mainState} 
              deep={mainState.deepBreadCrumb}/>   */}
-            <h5><Link to="/">Home/</Link><Link to={`/decks/${deck.id}`}>{`${deck.name}/`}</Link>Edit Deck</h5>
+            <h5><Link to="/">Home</Link>/<Link to={`/decks/${deck.id}`}>{`${deck.name}/`}</Link>Edit Deck</h5>
             <h2>Edit Deck
                 {/* {deck.name} */}
             </h2>

@@ -86,8 +86,8 @@ function ViewDeck(props) {
             {/* <Route exact path={`${url}/`}> */}
             {/* <NavBreadCrumb page={mainState.page} deck={blankVar} deep={mainState.deepBreadCrumb} mainState={mainState} 
             setMainState={setMainState}/> */}
-            <h5><Link to="/">Home/</Link>
-                {`${deck.name}`}</h5>
+            <h5><Link to="/">Home</Link>
+                {`/${deck.name}`}</h5>
             <h2>{deck.name}</h2>
             <p>{deck.description}</p>
             <Link to={`/decks/${deckId}/edit`} className="btn">Edit</Link>

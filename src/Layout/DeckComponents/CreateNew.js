@@ -27,7 +27,7 @@ function CreateNew(props) {
         <div>
             {/* <NavBreadCrumb page={mainState.page}  mainState={mainState} 
             setMainState={setMainState} deck={createTempDeck}/>             */}
-            <h5><Link to="/">Home/</Link>Create Deck</h5>
+            <h5><Link to="/">Home</Link>/ Create Deck</h5>
             <h3>
                 {/* {mainState.page} */}
                 Create Deck

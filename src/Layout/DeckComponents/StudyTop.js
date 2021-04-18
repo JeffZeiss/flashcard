@@ -25,9 +25,9 @@ function StudyTop(props) {
     return (
         <div>
             {/* <NavBreadCrumb pageState={mainState.page}/>      */}
-            <h5><Link to="/">Home/</Link><Link to={
+            <h5><Link to="/">Home</Link>/<Link to={
                 `/decks/${deck.id}`
-            }>{`${deck.name}/`}</Link>Study</h5>
+            }>{`${deck.name}`}</Link>/ Study</h5>
             <h2>{deck.name}: Study</h2>
             {/* <DeckForm editState={mainState.editState} deck={deck}/> */}
 
